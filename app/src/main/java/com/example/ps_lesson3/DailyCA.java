@@ -1,6 +1,8 @@
 package com.example.ps_lesson3;
 
-public class DailyCA {
+import java.io.Serializable;
+
+public class DailyCA implements Serializable {
     private String dgGrade;
     private String moduleCode;
     private int week;

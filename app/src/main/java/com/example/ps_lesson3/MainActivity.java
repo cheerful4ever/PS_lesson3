@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
         tvC347.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View arg0) {
-                DailyCA superman = new DailyCA("Superman", 100, 60);
+                DailyCA dailyGrade = new DailyCA("B", "C347", 1);
                 Intent i = new Intent(MainActivity.this,
                         SecondActivity.class);
-                // Put hero object in intent
-                i.putExtra("hero", superman);
+
+                i.putExtra("DailyCA", dailyGrade);
                 startActivity(i);
             }});
 
